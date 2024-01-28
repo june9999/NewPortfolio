@@ -95,7 +95,7 @@ export default function Home() {
 
               <div className="hero-welcome-text md:pl-[2rem] md:pt-[1rem] overflow-hidden">
                 <h1>My Languages and Tools:</h1>
-                <div className="flex w-[300%]  gap-[2px] linerani flex-wrap">
+                <div className="flex w-[300%]  gap-[2px] linerani flex-wrap h-[65px] ">
                   <Link
                     href="https://aws.amazon.com"
                     target="_blank"
