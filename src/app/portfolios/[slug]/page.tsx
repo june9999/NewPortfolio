@@ -46,8 +46,8 @@ export default async function Page(params: any) {
   const portfolio = data as portfolioData | undefined;
   console.log(portfolio);
   return (
-    <div className="w-full">
-      <h2 className="text-white mb-[2rem]">Project Detail</h2>
+    <div className="w-full h-full">
+      <h2 className="text-white mb-[2rem] font-semibold">Project Detail</h2>
       {portfolio && (
         <>
           <div className="portfolio-detail w-full">
@@ -55,7 +55,7 @@ export default async function Page(params: any) {
               <h1 className="cover-heading text-[30px] md:text-[65px]">
                 {portfolio.title}
               </h1>
-              <div className="flex flex-wrap w-full text-left">
+              <div className="flex flex-wrap w-full text-left p-[1rem] md:p-[2rem] justify-center">
                 {portfolio.imgUrl && (
                   <img
                     className="w-[100%] max-w-[28rem]"
@@ -63,7 +63,7 @@ export default async function Page(params: any) {
                     alt={`${portfolio.title} photo`}
                   />
                 )}
-                <div className="w-[40rem] flex flex-col pl-[2rem]">
+                <div className="w-[40rem] flex flex-col mt-[1rem] md:pl-[5rem]">
                   <p className="lead info ">
                     Main TechStack: <br />
                     {portfolio.techstack.map((e) => (
