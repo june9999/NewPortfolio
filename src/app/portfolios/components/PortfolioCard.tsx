@@ -12,10 +12,14 @@ const PortfolioCard: React.FC<{ portfolio: portfolioData }> = ({
         Description: <br />
         {portfolio.content}
       </CardText>
+
       <span className="">
-        Created Date:
+        Status:
+        {portfolio.status}
+        <br />
+        Last Update Date:
         {portfolio.endDate.getMonth() +
-          2 +
+          1 +
           "-" +
           portfolio.endDate.getFullYear()}
       </span>
