@@ -49,13 +49,14 @@ const page = () => {
             <p className="my-[1rem]">
               Sofar I have worked on a variety of technologies and projects up
               to this point. Throughout WBS bootcamp, I attended lots of group
-              work. During DPS(digital product school), my team and I developed
+              work. During DPS (digital product school), my team and I developed
               the technical MVP for the Xfactor tool. I now creating websites on
               my own.
             </p>
             <p>
-              {`If you have any questions, ideas that you are possionate about, or just want to connect, don&rsquo; hesitate to reach out. I&rsquo;
-              always open to collaboration.`}
+              If you have any questions, ideas that you are possionate about, or
+              just want to connect, don&rsquo; hesitate to reach out. I&rsquo;
+              always open to collaboration.
             </p>
           </div>
         </Col>
