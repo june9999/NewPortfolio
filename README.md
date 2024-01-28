@@ -2,7 +2,7 @@
 
 ## Status
 
-- Update
+- Continuously Update
 
 ## Tech/framework used
 
@@ -19,11 +19,11 @@
 - [reactstrap]
 - [Vercek/analytics]
 
-## Planned Main Features
+## Main Features
 
 - Upload personal projects
-- upload blogs
-- track data
+- Upload blogs
+- Track vistors data
 
 ## Getting Started
 

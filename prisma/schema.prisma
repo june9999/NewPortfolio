@@ -22,7 +22,6 @@ model Portfolio {
   endDate DateTime
   imgUrl String ?
   githubLink String?
-    productLink String?
-    features String[]
-    other String?
+  productLink String?
+  other String?
 }
