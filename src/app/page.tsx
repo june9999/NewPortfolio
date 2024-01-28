@@ -65,7 +65,7 @@ export default function Home() {
                 </div>
               </div>
             </Col>
-            <Col md="6" className="hero-welcome-wrapper w-full">
+            <Col md="6" className="hero-welcome-wrapper ">
               <div className="hero-welcome-text  md:pl-[2rem]">
                 <h1 className="wrap flex w-1rem ">
                   Welcome to My Portfolio. <br /> About Me:
