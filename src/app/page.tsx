@@ -93,7 +93,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="hero-welcome-bio md:pl-[2rem] md:pt-[3rem] overflow-hidden">
+              <div className="hero-welcome-text md:pl-[2rem] md:pt-[1rem] overflow-hidden">
                 <h1>My Languages and Tools:</h1>
                 <div className="flex w-[300%]  gap-[2px] linerani flex-wrap">
                   <Link

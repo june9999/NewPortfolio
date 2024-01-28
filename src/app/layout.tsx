@@ -43,7 +43,9 @@ export default function RootLayout({
       >
         <UserProvider>
           <Header />
-          <main className={`grow flex p-[2rem] md:p-[5rem]`}>{children}</main>
+          <main className={`grow flex p-[2rem] md:p-[3rem] 2xl:p-[5rem]`}>
+            {children}
+          </main>
         </UserProvider>
         <Analytics />
       </body>
