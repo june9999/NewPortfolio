@@ -14,7 +14,7 @@ const page = () => {
   const portfolios: portfolioData[] = data;
   console.log(portfolios);
   return (
-    <div className="portfolio-page flex gap-[2rem] flex-wrap">
+    <div className="portfolio-page flex gap-[2rem] flex-wrap 2xl:mx-[5rem]">
       {portfolios &&
         portfolios.map((e: portfolioData) => (
           <Row key={e.id} className="">
@@ -25,6 +25,7 @@ const page = () => {
             </Link>
           </Row>
         ))}
+
       {isLoading && <div>loading...</div>}
       {error && <div>{error}</div>}
     </div>

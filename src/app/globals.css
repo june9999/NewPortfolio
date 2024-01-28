@@ -145,17 +145,11 @@ body {
 }
 
 .linerani {
-  overflow: hidden;
-  animation: myfirst 5s linear 2s infinite alternate;
-  height: 50px;
-  width: 30rem;
+  animation: myfirst linear 180s infinite;
 }
 
 @keyframes myfirst {
-  0% {
-    left: 0;
-  }
   100% {
-    left: -200%;
+    -webkit-transform: translateX(-200%);
   }
 }
