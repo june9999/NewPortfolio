@@ -58,13 +58,13 @@ export default async function Page(params: any) {
               <div className="flex flex-wrap w-full text-left p-[1rem] md:p-[2rem] justify-center">
                 {portfolio.imgUrl && (
                   <img
-                    className="w-[100%] max-w-[28rem]"
+                    className="w-[100%] max-w-[40rem]"
                     src={portfolio.imgUrl}
                     alt={`${portfolio.title} photo`}
                   />
                 )}
-                <div className="w-[40rem] flex flex-col mt-[1rem] md:pl-[5rem]">
-                  <p className="lead info ">
+                <div className="w-full max-w-[28rem]  flex flex-col mt-[1rem] md:pl-[5rem]">
+                  <p className="lead info w-full ">
                     Main TechStack: <br />
                     {portfolio.techstack.map((e, index) => {
                       if (index < portfolio.techstack.length - 1) {
@@ -73,10 +73,10 @@ export default async function Page(params: any) {
                       return <span key={e}>{e} </span>;
                     })}
                   </p>
-                  <p className="lead">{portfolio.content}</p>
+                  <p className="lead ">{portfolio.content}</p>
 
                   {portfolio.githubLink && (
-                    <p className="lead">
+                    <p className="lead w-full ">
                       <a
                         href={portfolio.githubLink}
                         target="_"
@@ -87,11 +87,11 @@ export default async function Page(params: any) {
                     </p>
                   )}
                   {portfolio.productLink && (
-                    <p className="lead">
+                    <p className="lead mt-[1rem] w-full ">
                       <a
                         href={portfolio.productLink}
                         target="_"
-                        className="btn btn-lg btn-secondary"
+                        className="btn btn-lg btn-secondary "
                       >
                         Have a Look
                       </a>
@@ -99,13 +99,13 @@ export default async function Page(params: any) {
                   )}
                   {portfolio.other && (
                     <>
-                      <p className="lead text-red-600 mt-[1rem]">
+                      <p className="lead text-red-600 mt-[1rem] w-full ">
                         {`Sorry for unable to share the repository. Please feel free to check our product video!`}
                       </p>
                       <a
                         href={portfolio.other}
                         target="_"
-                        className="btn btn-lg btn-secondary w-[20rem]"
+                        className="btn btn-lg btn-secondary max-w-[20rem]  w-full "
                       >
                         Watch more
                       </a>
