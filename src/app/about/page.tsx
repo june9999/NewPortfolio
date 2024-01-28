@@ -37,7 +37,7 @@ const page = () => {
             </p>
           </div>
         </Col>
-        <Col md="6">
+        <Col md="6" className="text-[24px]">
           <div className={`${createFadeInClass()}`}>
             <p>My name is Wenjun Xue and I am a junior software engineer.</p>
             <p className="my-[1rem]">
@@ -54,7 +54,7 @@ const page = () => {
               my own.
             </p>
             <p>
-              {`I am finding very exciting this journey with new technologies continuously. If you have any questions, ideas that you are possionate about, or just want to connect, don&rsquo; hesitate to reach out. I&rsquo;
+              {`If you have any questions, ideas that you are possionate about, or just want to connect, don&rsquo; hesitate to reach out. I&rsquo;
               always open to collaboration.`}
             </p>
           </div>

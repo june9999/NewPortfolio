@@ -74,8 +74,8 @@ export default function Home() {
             <Col md="6" className="hero-welcome-wrapper ">
               <div className="hero-welcome-text  md:pl-[2rem]">
                 <h1 className="wrap flex w-1rem ">
-                  Welcome to My Portfolio.Here, you will find the culmination of
-                  my passion for technolog <br />
+                  Welcome to My Portfolio. Here, you will find the culmination
+                  of my passion for technolog. <br />
                   <br /> About Me:
                 </h1>
                 <ReactTyped
