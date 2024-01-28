@@ -49,7 +49,7 @@ const page = () => {
               point.
             </p>
 
-            {/* <p>
+            <p>
               Before I worked on a number of team projects throughout WBS
               bootcamp. Using the Servelss framework and Typerscript, I was
               instrumental in developing the technical MVP for the Xfactor tool
@@ -59,10 +59,10 @@ const page = () => {
               experiences and looking forward to the next adventure.
             </p>
             <p>
-              If you have any questions, ideas that you are possionate about, or
+              {`If you have any questions, ideas that you are possionate about, or
               just want to connect, don&rsquo; hesitate to reach out. I&rsquo;
-              always open to collaboration.
-            </p> */}
+              always open to collaboration.`}
+            </p>
           </div>
         </Col>
       </Row>
