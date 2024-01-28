@@ -99,7 +99,7 @@ export default async function Page(params: any) {
                   )}
                   {portfolio.other && (
                     <>
-                      <p className="lead text-red-600">
+                      <p className="lead text-red-600 mt-[1rem]">
                         {`Sorry for unable to share the repository. Please feel free to check our product video!`}
                       </p>
                       <a
