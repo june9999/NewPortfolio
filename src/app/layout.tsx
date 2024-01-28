@@ -4,6 +4,7 @@ import { UserProvider } from "@auth0/nextjs-auth0/client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "@/components/shared/Header";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({
@@ -44,6 +45,7 @@ export default function RootLayout({
           <Header />
           <main className={`grow flex p-[2rem] md:p-[5rem]`}>{children}</main>
         </UserProvider>
+        <Analytics />
       </body>
     </html>
   );
