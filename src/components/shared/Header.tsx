@@ -74,7 +74,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const { user, isLoading, error } = useUser();
-  const [width, setWidth] = useState<number>();
+  const [width, setWidth] = useState<number>(0);
 
   if (typeof window !== "undefined") {
     window.onresize = () => {
