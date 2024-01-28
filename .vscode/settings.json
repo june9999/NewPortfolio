@@ -1,0 +1,7 @@
+{
+  "reactSnippets.settings.prettierEnabled": true,
+  "prettier.configPath": "",
+  "prettier.documentSelectors": [
+    "\"semi\": true,   \"trailingComma\": \"all\",   \"singleQuote\": false,   \"printWidth\": 80,   \"tabWidth\": 2,   \"noBracketSpacing\": false"
+  ]
+}
