@@ -23,7 +23,11 @@ export const createPortfolio = async (portfolio: portfolioData) => {
 
 export const getPortfolio = async (): Promise<portfolioData[] | error> => {
   try {
-    const res = await prisma.portfolio.findMany();
+    const res = await prisma.portfolio.findMany({
+      orderBy: {
+        endDate: "desc",
+      },
+    });
     const data: portfolioData[] = res;
     console.log("successfully find data");
     // Return response to action

@@ -85,7 +85,7 @@ const Header = () => {
   return (
     <Navbar
       className={`w-full bg-black port-navbar port-default ${
-        isOpen && width < 700 ? "bg-black" : ""
+        isOpen && width < 700 ? "bg-[#0f2453]" : ""
       } transition duration-1000`}
       dark
       expand="md"

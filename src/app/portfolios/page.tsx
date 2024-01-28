@@ -14,11 +14,11 @@ const page = () => {
   const portfolios: portfolioData[] = data;
   console.log(portfolios);
   return (
-    <div className="portfolio-page w-full">
+    <div className="portfolio-page ">
       {portfolios &&
         portfolios.map((e: portfolioData) => (
           <Row key={e.id}>
-            <Link href={`portfolios/${e.id}`}>
+            <Link href={`portfolios/${e.id}`} className="no-underline">
               <Col key={e.id} md="4">
                 <PortfolioCard portfolio={e} />
               </Col>

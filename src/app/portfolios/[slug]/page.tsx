@@ -47,43 +47,43 @@ export default async function Page(params: any) {
   console.log(portfolio);
   return (
     <div className="w-full">
-      <h2>Project Detail</h2>
+      <h2 className="text-white mb-[2rem]">Project Detail</h2>
       {portfolio && (
         <>
           <div className="portfolio-detail w-full">
-            <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
-              <main role="main" className="inner page-cover">
-                <h1 className="cover-heading">{portfolio.title}</h1>
-                {/* <p className="lead dates">dates</p> */}
-                <p className="lead info mb-0">
-                  Main TechStack: <br />
-                  {portfolio.techstack.map((e) => (
-                    <span key={e}>{e} </span>
-                  ))}
-                </p>
-                <div className="flex">
-                  {portfolio.imgUrl && (
-                    <img
-                      className="w-[30rem]"
-                      src={portfolio.imgUrl}
-                      alt={`${portfolio.title} photo`}
-                    />
-                  )}
-                  <p className="lead">{portfolio.content}</p>
-                </div>
-
-                {portfolio.githubLink && (
-                  <p className="lead">
-                    <a
-                      href={portfolio.githubLink}
-                      target="_"
-                      className="btn btn-lg btn-secondary"
-                    >
-                      Read more on Github
-                    </a>
-                  </p>
+            <div className="cover-container d-flex h-100 p-3 mx-auto w-full flex-column">
+              <h1 className="cover-heading text-[30px] md:text-[65px]">
+                {portfolio.title}
+              </h1>
+              <div className="flex flex-wrap w-full text-left">
+                {portfolio.imgUrl && (
+                  <img
+                    className="w-[100%] max-w-[28rem]"
+                    src={portfolio.imgUrl}
+                    alt={`${portfolio.title} photo`}
+                  />
                 )}
-              </main>
+                <div className="w-[40rem] flex flex-col pl-[2rem]">
+                  <p className="lead info ">
+                    Main TechStack: <br />
+                    {portfolio.techstack.map((e) => (
+                      <span key={e}>{e} </span>
+                    ))}
+                  </p>
+                  <p className="lead">{portfolio.content}</p>
+                  {portfolio.githubLink && (
+                    <p className="lead">
+                      <a
+                        href={portfolio.githubLink}
+                        target="_"
+                        className="btn btn-lg btn-secondary"
+                      >
+                        Read more on Github
+                      </a>
+                    </p>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </>

@@ -8,7 +8,17 @@ const PortfolioCard: React.FC<{ portfolio: portfolioData }> = ({
     <CardHeader className="portfolio-card-header">{portfolio.type}</CardHeader>
     <CardBody>
       <CardTitle className="portfolio-card-title">{portfolio.title}</CardTitle>
-      <CardText className="portfolio-card-text">{portfolio.content}</CardText>
+      <CardText className="portfolio-card-text">
+        Description: <br />
+        {portfolio.content}
+      </CardText>
+      <span className="">
+        Created Date:
+        {portfolio.endDate.getMonth() +
+          2 +
+          "-" +
+          portfolio.endDate.getFullYear()}
+      </span>
     </CardBody>
   </Card>
 );

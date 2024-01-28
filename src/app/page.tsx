@@ -8,7 +8,13 @@ import { ReactTyped, Typed } from "react-typed";
 import { useState } from "react";
 
 export default function Home() {
-  const roles = ["Developer", "Tech Lover", "React", "Java"];
+  const roles = [
+    "Developer",
+    "Tech Lover",
+    "Good at React, Typerscript",
+    "Good at MERN",
+    "Basic knowledge of Java",
+  ];
   const [flipping, IsFlipping] = useState(true);
   console.log(flipping);
   return (
@@ -68,7 +74,9 @@ export default function Home() {
             <Col md="6" className="hero-welcome-wrapper ">
               <div className="hero-welcome-text  md:pl-[2rem]">
                 <h1 className="wrap flex w-1rem ">
-                  Welcome to My Portfolio. <br /> About Me:
+                  Welcome to My Portfolio.Here, you will find the culmination of
+                  my passion for technolog <br />
+                  <br /> About Me:
                 </h1>
                 <ReactTyped
                   loop
@@ -83,7 +91,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="hero-welcome-bio">
+              <div className="hero-welcome-bio md:pl-[2rem] md:pt-[1rem]">
                 <h1>{`Let's take a look on my work.`}</h1>
               </div>
             </Col>
