@@ -66,11 +66,15 @@ export default async function Page(params: any) {
                 <div className="w-[40rem] flex flex-col mt-[1rem] md:pl-[5rem]">
                   <p className="lead info ">
                     Main TechStack: <br />
-                    {portfolio.techstack.map((e) => (
-                      <span key={e}>{e} </span>
-                    ))}
+                    {portfolio.techstack.map((e, index) => {
+                      if (index < portfolio.techstack.length - 1) {
+                        return <span key={e}>{e}, </span>;
+                      }
+                      return <span key={e}>{e} </span>;
+                    })}
                   </p>
                   <p className="lead">{portfolio.content}</p>
+
                   {portfolio.githubLink && (
                     <p className="lead">
                       <a
@@ -81,6 +85,31 @@ export default async function Page(params: any) {
                         Read more on Github
                       </a>
                     </p>
+                  )}
+                  {portfolio.productLink && (
+                    <p className="lead">
+                      <a
+                        href={portfolio.productLink}
+                        target="_"
+                        className="btn btn-lg btn-secondary"
+                      >
+                        Have a Look
+                      </a>
+                    </p>
+                  )}
+                  {portfolio.other && (
+                    <>
+                      <p className="lead text-red-600">
+                        {`Sorry for unable to share the repository. Please feel free to check our product video!`}
+                      </p>
+                      <a
+                        href={portfolio.other}
+                        target="_"
+                        className="btn btn-lg btn-secondary w-[20rem]"
+                      >
+                        Watch more
+                      </a>
+                    </>
                   )}
                 </div>
               </div>

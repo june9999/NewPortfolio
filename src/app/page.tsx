@@ -32,7 +32,7 @@ export default function Home() {
               <div className="hero-section">
                 <div className={`flipper flex justify-center`}>
                   {flipping && (
-                    <div className={`back sm:w-[20rem]`}>
+                    <div className={`back sm:w-[25rem]`}>
                       <Image
                         className="home-image "
                         alt="section1"
@@ -44,13 +44,13 @@ export default function Home() {
                           Have a look at my portfolio
                         </div>
                       </div>
-                      <div className="shadow-custom sm:w-[20rem]">
+                      <div className="shadow-custom sm:w-[25rem]">
                         <div className="shadow-inner"> </div>
                       </div>
                     </div>
                   )}
                   {!flipping && (
-                    <div className="front sm:w-[20rem]">
+                    <div className="front sm:w-[25rem]">
                       <Image
                         className="home-image "
                         alt="section2"
@@ -63,7 +63,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="shadow-custom sm:w-[20rem]">
+                      <div className="shadow-custom sm:w-[25rem]">
                         <div className="shadow-inner"> </div>
                       </div>
                     </div>
