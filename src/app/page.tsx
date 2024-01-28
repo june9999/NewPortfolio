@@ -84,7 +84,7 @@ export default function Home() {
               </div>
 
               <div className="hero-welcome-bio">
-                <h1>Let's take a look on my work.</h1>
+                {/* <h1>Let's take a look on my work.</h1> */}
               </div>
             </Col>
           </Row>
