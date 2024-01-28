@@ -14,12 +14,12 @@ const page = () => {
   const portfolios: portfolioData[] = data;
   console.log(portfolios);
   return (
-    <div className="portfolio-page ">
+    <div className="portfolio-page flex gap-[2rem] flex-wrap">
       {portfolios &&
         portfolios.map((e: portfolioData) => (
-          <Row key={e.id}>
+          <Row key={e.id} className="">
             <Link href={`portfolios/${e.id}`} className="no-underline">
-              <Col key={e.id} md="4">
+              <Col key={e.id} className="w-[17rem] md:w-[30rem] ">
                 <PortfolioCard portfolio={e} />
               </Col>
             </Link>

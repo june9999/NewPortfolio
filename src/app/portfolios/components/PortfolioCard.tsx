@@ -4,9 +4,9 @@ import { Card, CardHeader, CardBody, CardText, CardTitle } from "reactstrap";
 const PortfolioCard: React.FC<{ portfolio: portfolioData }> = ({
   portfolio,
 }) => (
-  <Card className="portfolio-card">
+  <Card className=" portfolio-card w-[full] h-auto ">
     <CardHeader className="portfolio-card-header">{portfolio.type}</CardHeader>
-    <CardBody>
+    <CardBody className="md:h-[17rem]">
       <CardTitle className="portfolio-card-title">{portfolio.title}</CardTitle>
       <CardText className="portfolio-card-text">
         Description: <br />
