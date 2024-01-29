@@ -10,6 +10,7 @@ declare global {
 }
 
 const page = () => {
+  // external system: windows
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     return () => {

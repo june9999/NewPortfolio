@@ -10,6 +10,7 @@ export const useDatabase = (method: Function, option?: any) => {
     data: [] as any,
   });
 
+  //
   useEffect(() => {
     const fetchData = async () => {
       setState({ error: "", isLoading: true, data: [] });
@@ -26,7 +27,7 @@ export const useDatabase = (method: Function, option?: any) => {
       }
     };
     fetchData();
-  }, []);
+  }, [method, option]);
 
   return state;
 };

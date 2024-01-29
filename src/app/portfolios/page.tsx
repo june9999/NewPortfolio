@@ -12,7 +12,6 @@ const page = () => {
   const { data, error, isLoading } = useDatabase(getPortfolio);
 
   const portfolios: portfolioData[] = data;
-  console.log(portfolios);
   return (
     <div className="portfolio-page flex gap-[2rem] flex-wrap 2xl:mx-[5rem]">
       {portfolios &&
